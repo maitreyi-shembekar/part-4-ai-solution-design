@@ -26,14 +26,14 @@ Hospital process thousands of diagnostics scans every day. The numbers of patien
 - Transfer Learning Models uses a model that is already trained on millions of general images then use that to apply it on medical images/scans. Using a pre-trained model and tuning it specifically for medical data can be faster and more accurate.  
 
 6.	**Evaluation Plan:**  
-- Since, in medicine, we cannot afford to labelling an actually sick person are ‘healthy and miss a critical patient (False Negatives) is more dangerous than labelling a healthy patient as sick/critical (False Positives), it is important that we focus on Recall.  
+- Since, in medicine, labelling an actually sick person as ‘healthy' and missing a critical patient (False Negatives) is more dangerous than labelling a healthy patient as sick/critical (False Positives), it is important that we focus on Recall.  
 - AUC-ROC can be used to measure the model’s ability to distinguish between classes.  
 - An AI model can only label and sort, but it is also important that a doctor needs to be present to make the final diagnosis.  
 
 7.	**Responsible AI Considerations:**  
 - The training data should not be only from one hospital. Using a larger, diverse and central dataset should be used to increase training and variation and reduce bias.
 - AI can sometimes make incorrect predictions or be biased in predictions, a human oversight would be required.  
-- AI may sometimes delete files it deems as useless; hence the AI model must strictly only be allowed to rearrange and label files, ask for permissions from human if needed.  
+- AI may sometimes delete files it deems as useless; hence the AI model must strictly only be allowed to rearrange and label files, ask for permissions from humans if needed.  
 - The AI model can be given limited personal information such as only the scans, the age or any history or anonymise data and data encryption to ensure data privacy.  
 - Doctors may stop looking closely if the AI says “Normal”. The AI model shouldn’t make diagnoses and should leave the final decision to the doctors. The AI is just an information tool and not a diagnosing tool, hence users must check the image and never over-rely on it.
 
